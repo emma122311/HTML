@@ -26,3 +26,15 @@ function Show(){
 	}
 	  //Show 方選名稱// 
 ```
+js 宣告全域變數(不在方選內)
+```
+var num = 0;
+```
+js 宣告方選（方選名字不重複）
+```
+function text()
+	{
+	
+	alert('123');
+	}
+```
