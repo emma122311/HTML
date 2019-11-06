@@ -17,7 +17,7 @@ js 點擊觸發
  onclick="Show()"
  	//Show 方選名稱
 ```
-js console 輸出 （console.log）
+js console.log 偵錯 （console.log）
 ```
 function Show()
 {
@@ -25,9 +25,10 @@ function Show()
 }
 	//console.log(輸出)	
 ```
-js 宣告全域變數(不在方選內)
+js Global Variable 全域變數與 Local Variable 區域變數  
 ```
 var num = 1;
+	//宣告全域變數(不在方選內)
 ```
 js 宣告方選（方選名字不重複）
 ```
@@ -37,7 +38,7 @@ function text()
 }
 	//test(名稱)
 ```
-js 判斷式
+js  if , else if ,else 判斷式
 ```
 function test()
 {
@@ -49,18 +50,40 @@ function test()
 	{
 	
 	}
+	else(條件式)
+	{
+	}
 }
 
 ```
-js console 輸出
-```
-consloe.log(num);
-```
+
 js 使用for迴圈
 ```
 for (语句 1; 语句 2; 语句 3) 
 {
      要执行的代码块
 }
-//例如：for(i=1;i<=10;i++){}
+	//例如：for(i=1;i<=10;i++){}  輸出後會在console裡面出現1~10
+
+```
+onchange Event
+```
+function ShowStr(x)
+{
+	var Str=document.getElementById(x).value;
+	alert(Str);
+}
+
+	//請隨意輸入幾個文字：<input type="text" id="Str" onchange="ShowStr(this.id)">
+	//當輸入完文字滑鼠移開文字欄位就會觸發onchange Event
+```
+九九乘法
+```
+for(i = 1;i<=10;i++)
+{
+	console.log("2" +"x"+ i + "=" + 2*i);
+}
+	//利用for迴圈使變數產生數字,輸出後會產生1~9
+	//再使兩個變數相乘
+	//輸出結果（2x1=2 ... 2x10=20）
 ```
