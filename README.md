@@ -121,10 +121,17 @@ js 改變input的 value
 ```
 js 判斷 input 空值
 ```
+1.判斷 ID 等於 ""
 if (document.getElementById('test1').value == '') 
 {
-　alert('數值請勿為空');
+	alert('數值請勿為空');
 }
+2.同時判斷(條件1),（）條件2）不等於""
+if (num1 !=='' && num2 !=='') 
+{
+　	num3.value =parseInt(num1)+parseInt(num2);
+}
+// 空值 = ""
 ```
 js 判斷 1~100 為(2)的倍數
 ```
@@ -136,3 +143,15 @@ for (i=1;i<=100;i++)
 　　}
 　}
 ```
+js onkeyup 事件
+```
+<input type="text" onkeyup="myFunction()">
+  //onkeyup 事件會在鍵盤被鬆開時發生。
+```
+js parseInt() 函数
+```
+parseInt() 函数可解析一个字符串，并返回一个整数。
+ //num3.value =parseInt(num1)+parseInt(num2);
+
+```
+
