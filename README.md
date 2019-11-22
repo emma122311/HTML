@@ -177,4 +177,37 @@ js 修改和獲取p標籤裡面的內容
   // innerText 並非 W3C 所規定的標準寫法，而且僅適用於 IE 瀏覽器，這點非常重要。
 
 ```
+JS 判斷是否為整數
+```
+<input type='text' onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'')">
+   //输入框只能输入正整数，输入同时禁止了以0开始的数字输入，防止被转化为其他进制的数值。
+<input type="text" onkeyup="value=value.replace(/[^\-?\d.]/g,'')" /> //限制文本框只能输入正数，负数，小数
+<input type="text" onkeyup="value=value.replace(/[^\d.]/g,'')" />  //限制文本框只能输入正数，小数
 
+//onkeyup:事件會在鍵盤被鬆開時發生。
+```
+js 判斷輸入是否為數字
+```
+isNaN(numValue)
+ EXP: if (isNaN(i) == false && isNaN(j) == false && i != ""  && j != "") 
+ //判斷是否為數字//判斷是否為空值*/
+```
+Js isNAN()函數用於檢查其參數是否 是非數字值
+```
+  isNaN(x)
+  isNaN(NaN) == true
+  isNaN("hi") == true
+  isNaN(undefined) == true
+  isNaN(10) == false
+  isNaN("10") == false
+  //如果x是特殊的非數字值NAN(或者能被轉換為這樣的值),返回的值就是true。如果x是其他值,則返回false。
+  //參考網址：https://coder.tw/?p=7435
+```
+ js input min屬性
+ ```
+ 數量 (在1和5之間):
+  <input type="number" name="quantity" min="1" max="5"><br>
+  min 屬性規定 <input> 元素的最小值。
+  //提示：min 屬性與 max 屬性配合使用，可創建合法值範圍。
+  //注意：max 和 min 屬性適用於以下 input 類型：number、range、date、datetime、datetime-local、month、time 和 week。
+ ```
