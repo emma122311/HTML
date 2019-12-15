@@ -211,3 +211,8 @@ Js isNAN()函數用於檢查其參數是否 是非數字值
   //提示：min 屬性與 max 屬性配合使用，可創建合法值範圍。
   //注意：max 和 min 屬性適用於以下 input 類型：number、range、date、datetime、datetime-local、month、time 和 week。
  ```
+ Js 每隔一秒就執行
+```
+setTimeout("test()",1000);
+```
+
